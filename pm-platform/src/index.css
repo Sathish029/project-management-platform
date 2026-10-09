@@ -1,0 +1,16 @@
+:root {
+  --bg: #f4f6fb; --card: #ffffff; --text: #1e293b; --muted: #64748b; --border: #e2e8f0;
+  --primary: #4f46e5; --primary-soft: #eef2ff; --shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
+  --green: #16a34a; --amber: #d97706; --red: #dc2626; --blue: #2563eb;
+}
+[data-theme='dark'] {
+  --bg: #0f172a; --card: #1e293b; --text: #e2e8f0; --muted: #94a3b8; --border: #334155;
+  --primary: #818cf8; --primary-soft: #2b3367; --shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif; background: var(--bg); color: var(--text); transition: background 0.2s, color 0.2s; }
+a { color: var(--primary); text-decoration: none; }
+button { font: inherit; cursor: pointer; color: inherit; }
+input, select { font: inherit; color: var(--text); background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 9px 12px; outline: none; }
+input:focus, select:focus { border-color: var(--primary); }
+h1 { font-size: 1.7rem; } h2 { font-size: 1.1rem; margin-bottom: 14px; } h3 { font-size: 1rem; }
